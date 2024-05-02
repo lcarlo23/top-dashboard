@@ -7,6 +7,63 @@
     <title>TOP Dashboard</title>
 </head>
 <body>
-    
+    <div id="header">
+        <form action="">
+            <button type="submit"><img src="./assets/icons/magnify.svg" alt="search"></button>
+            <input type="search" id="search" name="search">
+        </form>
+        <div id="profile">
+            <button type="button"><img src="./assets/icons/bell-ring-outline.svg" alt="notifications"></button>
+            <button type="button"><img src="./assets/avatars/cat.jpg" alt="avatar" class="profileImg"></button>
+            <p id="profileName">Morgan Oakley</p>
+        </div>
+        <div id="profileBanner">
+            <img src="assets/avatars/cat.jpg" alt="avatar">
+            <div class="welcome">
+                <p>Hi there,</p>
+                <p class="banner-name">Morgan Oakley (@morgan)</p>
+            </div>
+        </div>
+        <div id="headerButtons">
+            <button class="header-button">New</button>
+            <button class="header-button">Upload</button>
+            <button class="header-button">Share</button>
+        </div>
+    </div>
+    <div id="sidebar">
+        <div class="side-section">
+            <img src="./assets/icons/view-dashboard.svg" alt="dashboard-icon" class="main-icon">
+            <p class="title">Dashboard</p>
+        </div>
+        <div class="side-section">
+            <img src="./assets/icons/home.svg" alt="home-icon" class="side-icon">
+            <p class="side-menu">Home</p>
+            <img src="./assets/icons/card-account-details-outline.svg" alt="profile-icon" class="side-icon">
+            <p class="side-menu">Profile</p>
+            <img src="./assets/icons/message-reply.svg" alt="messages-icon" class="side-icon">
+            <p class="side-menu">Messages</p>
+            <img src="./assets/icons/clock-time-three.svg" alt="history-icon" class="side-icon">
+            <p class="side-menu">History</p>
+            <img src="./assets/icons/note-multiple.svg" alt="tasks-icon" class="side-icon">
+            <p class="side-menu">Tasks</p>
+            <img src="./assets/icons/account-group.svg" alt="coomunity-icon" class="side-icon">
+            <p class="side-menu">Communities</p>
+        </div>
+        <div class="side-section">
+            <img src="./assets/icons/cog.svg" alt="settings-icon" class="side-icon">
+            <p class="side-menu">Settings</p>
+            <img src="./assets/icons/help-box.svg" alt="support-icon" class="side-icon">
+            <p class="side-menu">Support</p>
+            <img src="./assets/icons/shield-check.svg" alt="privacy-icon" class="side-icon">
+            <p class="side-menu">Privacy</p>
+        </div>
+    </div>
+    <div id="content">
+        <div id="projects"></div>
+        <div id="contentBar">
+            <div id="announcements"></div>
+            <div id="trending"></div>
+        </div>
+    </div>
 </body>
 </html>

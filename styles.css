@@ -7,6 +7,10 @@
     border: none;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 body {
     height: 100vh;
     display: grid;
@@ -105,14 +109,20 @@ img {
     display: grid;
     grid-template-rows: repeat(3, max-content);
     gap: 50px;
-    padding: 15px 50px 0px 15px;
+    padding: 15px 100px 0px 15px;
 }
 
 .side-section {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 20px 10px;
+    gap: 20px 30px;
+    padding-left: 15px;
+}
+
+.side-section:first-of-type {
+ padding-left: 0;
+ column-gap: 20px;
 }
 
 .main-icon {
@@ -132,7 +142,84 @@ img {
     font-size: 1.25rem;
 }
 
-
 #content {
     background-color: #e4eaf0;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, 300px);
+    gap: 30px;
+}
+
+#content h2 {
+    margin-bottom: 10px;
+}
+
+#content p {
+    color: #777;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-left: 8px solid #efb93e;
+    border-radius: 8px;
+    box-shadow: 2px 3px 5px 0 #ccc;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-rows: repeat(2, min-content) 1fr;
+}
+
+.card-icons {
+    justify-self: end;
+    align-self: end;
+}
+
+#contentbar div+h2 {
+    margin-top: 20px;
+}
+
+#announcements, #trending {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 0 #ccc;
+    padding: 40px;
+}
+
+#announcements p {
+    font-size: 0.9rem;
+}
+
+hr {
+    margin: 20px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+#trending {
+    display: grid;
+    row-gap: 25px;
+}
+
+.trend-project {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.trend-project img {
+    height: 40px;
+}
+
+.trend-project p {
+    font-size: 0.9rem;
+}
+
+.trend-project h5 {
+    font-weight: 500;
 }
